@@ -10,6 +10,7 @@ var socket = require('socket.io');
 var io = socket(server);
 var chat = [];
 var users = [];
+var port =
 app.use('/', express.static('public_static'));
 //io means root and hey here referes to person who is sending you the message only
 io.on('connection', function (hey) {
@@ -64,6 +65,6 @@ io.on('connection', function (hey) {
     });
 });
 
-server.listen(5000, function () {
+server.listen(process.env.PORT || 8080, function () {
     console.log("server is running at 5000")
 });
