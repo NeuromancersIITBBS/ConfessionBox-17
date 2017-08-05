@@ -9,6 +9,7 @@
  nav .brand-logo i {
      margin-top: 7px!important;
  }
+
  @media screen and (max-width:630px) {
      #credits{
          font-size: 14px!important;
