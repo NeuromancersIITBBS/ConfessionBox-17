@@ -1,0 +1,114 @@
+ fa fa-users{
+    font-size: 50px;
+    padding:0 20px;
+    margin-top: 7px !important;
+}
+ #credits{
+     font-size: large;
+ }
+ nav .brand-logo i {
+     margin-top: 7px!important;
+ }
+ @media screen and (max-width:630px) {
+     #credits{
+         font-size: 14px!important;
+         text-transform: lowercase;
+     }
+ }
+ .nav-extended{
+     background-image: url("wooden_background.jpg");
+ }
+#he1,#he2{
+    font-size: 32px;
+}
+body{
+    height: 90vh;
+    width: 100%;
+    /*background-color: #ffebee;*/
+    /*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/12/d6/50/12d65041ea0034328d98beb343b560bf.jpg");*/
+    /*background-image: url("wooden_background.jpg");*/
+    background-image: url("light_wood.jpg");
+}
+
+#first_cont{
+    height: 70vh;
+}
+#sec_cont{
+    height: 10vh;
+    background-image: url("wooden_background.jpg");
+    margin-top: 11%;
+    position: fixed;
+    width: 100%;
+    color:white;
+}
+.userfield{
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0% 10%;
+}
+.inp{
+    width: 70%;
+    float: left;
+}
+.btn-floating{
+    margin-top: 10px;
+    float: right;
+    size: 100px;
+    padding: 10px 5px!important;
+    width: 60px!important;
+    height: 60px!important;
+    font-size: 3rem!important;
+}
+.material-icons{
+    font-size: 2.6rem!important;
+}
+
+ .tb {
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     background-color: #EAEAEA;
+     background: -moz-linear-gradient(top, #FFF, #EAEAEA);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1.0, #EAEAEA));
+     border: 1px solid #CACACA;
+     color: #444;
+     font-size: 1.5em!important;
+     padding: 2px 6px;
+     width: 70%!important;
+     position: fixed;
+     border-radius:30px!important;
+     word-wrap: break-word!important;
+     min-height: 2rem!important;
+     /*height: 2rem!important;*/
+ }
+
+.tb:focus {
+    background: #FFF;
+    -webkit-box-shadow: 0 0 25px #CCC;
+    -moz-box-shadow: 0 0 25px #ccc;
+    box-shadow: 0 0 25px #CCC;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.baapu{
+    height: inherit;
+}
+ .speech-bubble {
+     /*background-color: white;*/
+     background-image: url("wooden_background.jpg");
+     border: 1px solid #3e2723;
+     border-radius: 20px;
+     width: 90%;
+     text-align: left;
+     padding: 20px;
+     font-size: 20px;
+     font-family: "Comic Sans MS";
+     color: white;
+     margin: 2%;
+     /*overflow: auto;*/
+     word-wrap: break-word;
+     box-sizing: border-box;
+ }
