@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confession box</title>
+    <meta name="viewport" content="width = device-width, initial-scale=1" ;>
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Materialize.css" rel="stylesheet" type="text/css">
+    <link href="styler.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav class="nav-extended">
+
+    <div class="nav-wrapper">
+
+        <a href="#" class="brand-logo">  <i class="fa fa-users" aria-hidden="true" ></i>Confession box </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down" >
+
+            <li class="switcher"id="flipper" style="font-size: xx-large;">Admin</li>
+            <!--<li><a id="he2" href="badges.html">Clear chat</a></li>-->
+        </ul>
+    </div>
+    <!--<div class="nav-content">
+        <ul class="tabs tabs-transparent">
+            <li class="tab" id="credits">By Rishabh Gupta, Neuromancers the coding society</li>
+        </ul>
+    </div>-->
+</nav>
+
+    <div class="container" id="first_cont">
+    <div class="baapu" id = "baapu">
+        <!--<ul id="message"></ul>-->
+    </div>
+
+        <!--<input class="textbox" type="file"  placeholder="Type your message here">-->
+    <!--msg+='<div style="background:#fafafa; border-radius: 30px; width: 80%">'+'<p>'+data.user+': '+data.input+'</p>'+'</div>';-->
+    </div>
+    <div class = "userfield">
+    <div class="inp">
+        <textarea class="tb materialize-textarea" id = "inp" type="text" placeholder="Type your message here"></textarea></div>
+    <div class="butn">
+        <!--<button class="btn waves-effect waves-light" name="action">
+            <i class="material-icons right">send</i>
+        </button>-->
+        <a class="btn-floating waves-effect waves-light"><i class="material-icons">send</i></a>
+    </div>
+    <br><br>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
