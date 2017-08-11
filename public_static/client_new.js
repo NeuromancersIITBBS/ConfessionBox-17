@@ -59,7 +59,7 @@ $(function () {
         $('#baapu').append(msg);
        // document.getElementById('lehsoon').innerHTML = '<a class="btn-floating waves-effect waves-light" href="#lehsoon"><i class="material-icons">send</i></a>';
        //  $('#'+counter).focus();
-        counter++;
+
 
         //  gotoBottom('#baapu');
      //   $('#first').focus();
@@ -128,9 +128,4 @@ function deleter (el) {
             $(el).remove();
         }
     }
-}
-function gotoBottom(id){
-    /*var element = document.getElementById(id);
-    element.scrollTop = element.scrollHeight - element.clientHeight;*/
-   // $('#'+counter).focus();
 }

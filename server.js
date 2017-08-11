@@ -65,6 +65,6 @@ io.on('connection', function (hey) {
     });
 });
 
-server.listen(5000, function () {
+server.listen(port, function () {
     console.log("server is running at 5000")
 });
