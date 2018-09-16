@@ -7,6 +7,12 @@ body{
     flex-direction: column;
 
 }
+.content{
+    background-color: #004d40;
+    padding: 2.5%;
+    width: 100%;
+    overflow: scroll;
+}
 .nav{
     height: 10vh;
     width: 100%;
