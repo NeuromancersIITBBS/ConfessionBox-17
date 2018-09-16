@@ -75,7 +75,7 @@ $(function () {
                 $('#flipper').text('back to client');
                 // $('.waves-effect waves-light btn').show();
             }else {
-                alert("incorrect password. Try again");
+                alert("incorrect password.Please try again");
             }
         }
     });
@@ -100,7 +100,7 @@ $(function () {
 
 function deleter (el) {
     if(flag===1) {
-        if (confirm('delete this box?')) {
+        if (confirm('Do you wish to delete this box?')) {
             var msg = $(el).text();
             console.log("reached " + msg)
             socket.emit('del_message', msg);
