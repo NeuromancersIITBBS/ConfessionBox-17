@@ -12,8 +12,10 @@ $(function () {
     alert("Greetings! welcome to the confession box. Pick a fancy username which is not your name. You can post maximum 3 confessions here." +
         " Confession shouldn't be derogatory or offensive to anyone in particular. " +
         "This web application was created by Rishabh Gupta as a project for Neuromancers, The Coding society of IIT Bhubaneswar.");
+        
     var count = 0;
     var username = prompt('user name');
+    console.log("Username is "+username);
     socket.emit('message', new Date().getTime());
     socket.on('start',{user: username});
     //$('#message').append(arr);
@@ -33,6 +35,7 @@ $(function () {
             count++;
         }else {
             alert("you cannot post more than 3 confessions");
+            console.log("Trying to post more than 3 confessions");
         }
     });
     /*socket.on('get', function (data) {
@@ -71,11 +74,13 @@ $(function () {
             var password = prompt('password');
             if (password === "chatter") {
                 alert("password is correct");
+                console.log("Correct password");
                 flag = 1;
                 $('#flipper').text('back to client');
                 // $('.waves-effect waves-light btn').show();
             }else {
                 alert("incorrect password.Please try again");
+                console.log("Incorrect password");
             }
         }
     });
