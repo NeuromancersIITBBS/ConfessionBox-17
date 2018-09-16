@@ -18,7 +18,7 @@ $(function () {
     var count = 0;
     var username = prompt('user name');
     if(username===null){
-        username = "abc";
+        username = "Anonymous";
     }
     socket.emit('message', new Date().getTime());
     socket.on('start',{user: username});
@@ -121,7 +121,7 @@ $(function () {
 
 function deleter (el) {
     if(flag===1) {
-        if (confirm('delete this box?')) {
+        if (confirm('Do you want to delete this box?')) {
             var msg = $(el).text();
             console.log("reached " + msg)
             socket.emit('del_message', msg);

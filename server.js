@@ -24,7 +24,7 @@ io.on('connection', function (hey) {
     });
     io.emit('all',chat);
     hey.on('disconnect', function () {
-        console.log('disconnected');
+        console.log('disconnected from server');
         delete users[hey.id];
         console.log('user disconnected'+hey.id);
         /*
@@ -57,10 +57,10 @@ io.on('connection', function (hey) {
            // console.log(chat.input);
             if(chat[i].input===data){
                 chat.splice(i,1);
-                console.log("hello");
+                console.log("Test delete");
             }
         }
-        console.log(data+"bc");
+        console.log(data+"Deleting message");
 
     });
 });
